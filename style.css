@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 nav{
     display:flex;
     justify-content: space-around;
@@ -48,6 +50,15 @@ nav{
  transition: all 0.3s ease;
 }
 
+#footer{
+    position:absolute;
+    bottom:0;
+    background-color: rgb(65, 65, 158);
+    width: 1600px;
+    height: 48px;
+}
+
+
 @media screen and (max-width:1024px){
 
 }
@@ -80,6 +91,7 @@ nav{
 .nav-active{
     transform: translateX(0%);
 }
+
 
 @keyframes navLinkFade{
     from{

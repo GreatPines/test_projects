@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header, .footer {
+    width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 40px 0;
+        color: #fff;
+  }
+
+  .header{
+      top:0;
+  }
+
+  .footer {
+      bottom:0;
+    
+  }
