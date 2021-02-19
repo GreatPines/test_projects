@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     height:100vh;
     background-position:center;
+    background-color: rgb(194, 87, 16);
   }
 
 nav{
@@ -63,28 +64,25 @@ nav{
     height: 5%;
 }
 .column{
-    display: grid; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 2em;
+    grid-column-gap: 1em;
+
 }
 
-#img1{
-    grid-area: img1;
-}
-#img2{
-    grid-area: img2;
-}
-#img3{
-    grid-area: img3;
-}
-#img4{
-    grid-area: img4;
-}
+
 .column img{
     height:350px;
-    width: 350px;   
+    width: 350px;  
+  display: flex;
+  align-items: center;
+  margin: 125px 0 0;
+
 }
+
 
 
 @media screen and (max-width:1024px){
