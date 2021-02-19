@@ -57,11 +57,11 @@ nav{
 }
 
 #footer{
-    position:absolute;
+    position:fixed;
     bottom:0px;
     background-color: rgb(65, 65, 158);
     width: 100%;
-    height: 48px;
+    height: 5%;
 }
 
 
