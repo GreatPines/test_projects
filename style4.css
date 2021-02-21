@@ -66,14 +66,14 @@ nav{
 
 .column{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     grid-column-gap: 1em;
 
 }
-
 
 .column img{
     height:350px;
@@ -84,8 +84,9 @@ nav{
 
 }
 
+
 @media screen and (max-width:768px){ 
-    .column, .column img{
+    .column, .column img {
         display:flex;
         flex-direction: column;
     }
