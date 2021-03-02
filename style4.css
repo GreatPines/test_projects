@@ -32,6 +32,7 @@ nav{
     display:flex;
     justify-content: space-around;
     width:30%;
+    z-index:10;
 }
 .nav-links li{
     list-style: none;
@@ -149,3 +150,7 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+.column img:hover{
+    opacity:0.9;
+    background-color: white;
+}

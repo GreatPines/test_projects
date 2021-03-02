@@ -5,7 +5,6 @@
 }
 
 body {
-    background-image: url("20190910_081311.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     height:100vh;
@@ -33,6 +32,7 @@ nav{
     display:flex;
     justify-content: space-around;
     width:30%;
+    z-index:10;
 }
 .nav-links li{
     list-style: none;
@@ -57,14 +57,25 @@ nav{
  transition: all 0.3s ease;
 }
 
-.background img{
-    height: 600px;
-    width:600px;
-    position: absolute;
-    top:15%;
-    right:33%;
-    border-style: inset;
+.background{
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+ justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+
+.background img{
+    height:650px;
+    width: 650px;  
+  display: flex;
+  align-items: center;
+  margin: 125px 0 0;
+
+}
+
 
 #footer{
     position:fixed;
@@ -75,8 +86,12 @@ nav{
 }
 
 
-@media screen and (max-width:1024px){
+.background img:hover{
+    opacity:0.9
+}
 
+@media screen and (max-width:1024px){
+    
 }
 
 @media screen and (max-width:768px){
@@ -130,4 +145,21 @@ nav{
 
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.background{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+ justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background img{
+    height:500px;
+    width: 500px;  
+  display: flex;
+  align-items: center;
 }
