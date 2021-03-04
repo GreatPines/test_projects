@@ -59,11 +59,11 @@ nav{
 
 .background{
     display:flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
  justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: -1;
 }
 
 
@@ -76,6 +76,24 @@ nav{
 
 }
 
+.overlay{
+    cursor: pointer;
+    position: absolute;
+    object-fit: cover;
+    top: 185px;
+    left:518.5px;
+    height:501px;
+    width: 500px; 
+    background:linear-gradient(to bottom, rgb(255,255,255),rgb(167, 162, 162) );
+    z-index: 10;
+    opacity:0;
+
+}
+
+.overlay:hover{
+        opacity:0.1;
+}
+
 
 #footer{
     position:fixed;
@@ -86,9 +104,6 @@ nav{
 }
 
 
-.background img:hover{
-    opacity:0.9
-}
 
 @media screen and (max-width:1024px){
     
