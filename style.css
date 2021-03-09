@@ -63,7 +63,6 @@ nav{
  justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: -1;
 }
 
 
@@ -73,27 +72,54 @@ nav{
   display: flex;
   align-items: center;
   margin: 125px 0 0;
+  color:white;
+  z-index:5
 
 }
 
 .overlay{
-    cursor: pointer;
-    position: absolute;
-    object-fit: cover;
-    top: 185px;
-    left:518.5px;
-    height:501px;
-    width: 500px; 
-    background:linear-gradient(to bottom, rgb(255,255,255),rgb(167, 162, 162) );
-    z-index: 10;
+    position:absolute;
+    bottom:67px;
+    width:503px;
+    height:503.5px;
+    background: rgba(255, 255, 255, 0.6);
+    color:#181355;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity:0;
-
+    transition:opacity 0.25s;
+    z-index:12;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
 .overlay:hover{
-        opacity:0.1;
+    opacity:1;
+    cursor:pointer;
 }
 
+.img_title{
+    text-align: center;
+}
+.circle{
+        display: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: blue;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top:0;
+        left:0;
+        pointer-events:none;
+        z-index: 60;
+}
 
 #footer{
     position:fixed;
@@ -138,6 +164,10 @@ nav{
     transform: translateX(0%);
 }
 
+.background img{
+    z-index: 1;
+}
+
 
 @keyframes navLinkFade{
     from{
@@ -147,8 +177,8 @@ nav{
     to{
         opacity: 1;
         transform: translateX(0px);
-    }
-}
+    }}
+
 
 .toggle .line1{
  transform: rotate(-45deg) translate(-5px,6px);
@@ -176,5 +206,4 @@ nav{
     height:500px;
     width: 500px;  
   display: flex;
-  align-items: center;
-}
+  align-items: center;}
