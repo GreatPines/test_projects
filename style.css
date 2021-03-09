@@ -63,6 +63,7 @@ nav{
  justify-content: center;
     align-items: center;
     text-align: center;
+    position:relative;
 }
 
 
@@ -79,11 +80,11 @@ nav{
 
 .overlay{
     position:absolute;
-    bottom:67px;
-    width:503px;
+    bottom:0px;
+    width:503.5px;
     height:503.5px;
-    background: rgba(255, 255, 255, 0.6);
-    color:#181355;
+    background: rgba(245, 245, 247, 0.6);
+    color:rgb(65, 65, 158);
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -95,6 +96,7 @@ nav{
     font-size: 5rem;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(0,0,0);
+    border:none rgb(255, 255, 255);
 }
 
 .overlay:hover{
@@ -105,21 +107,7 @@ nav{
 .img_title{
     text-align: center;
 }
-.circle{
-        display: absolute;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border-style: solid;
-        border-width: 2px;
-        border-color: blue;
-        background-color: rgba(0, 0, 0, 0);
-        position: absolute;
-        top:0;
-        left:0;
-        pointer-events:none;
-        z-index: 60;
-}
+
 
 #footer{
     position:fixed;
@@ -207,3 +195,5 @@ nav{
     width: 500px;  
   display: flex;
   align-items: center;}
+
+  
